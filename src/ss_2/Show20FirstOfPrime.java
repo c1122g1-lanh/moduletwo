@@ -1,13 +1,15 @@
+package ss_2;
 
-package com.company;
-public class ShowOfPrime {
+public class Show20FirstOfPrime {
     public static void main(String[] args) {
         int number = 2;
         int count = 0;
-        System.out.println("cac snt nho hon 100 : ");
-        while (number < 100) {
+        int countOfPrime = 0;
+        System.out.println("20 snt dau la : ");
+        while (countOfPrime < 20) {
             if (number == 2 || number == 3) {
                 System.out.println(number);
+                countOfPrime++;
                 number++;
                 continue;
             }
@@ -18,6 +20,7 @@ public class ShowOfPrime {
                 }
             }
             if (count == 0) {
+                countOfPrime++;
                 System.out.println(number);
             }
             count = 0;
@@ -25,4 +28,3 @@ public class ShowOfPrime {
         }
     }
 }
-

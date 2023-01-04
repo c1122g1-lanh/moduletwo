@@ -1,4 +1,5 @@
-package com.company;
+package ss_2;
+
 import java.util.Scanner;
 
 public class ShowsFigure {
