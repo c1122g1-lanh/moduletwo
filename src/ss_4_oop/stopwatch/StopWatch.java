@@ -1,13 +1,9 @@
 package ss_4_oop.stopwatch;
 
-
-import javax.xml.crypto.Data;
-import java.time.LocalTime;
 import java.time.ZonedDateTime;
-import java.util.Date;
+
 
 public class StopWatch {
-    public Date date = new Date();
     private long startTime;
     private long endTime;
 
