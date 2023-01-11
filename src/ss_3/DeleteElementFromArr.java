@@ -3,7 +3,7 @@ package ss_3;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DeleteElement {
+public class DeleteElementFromArr {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 3, 5, 7};
 

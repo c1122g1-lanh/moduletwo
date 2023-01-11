@@ -17,15 +17,14 @@ public class ElementMinInArr2D {
             }
         }
         int min = matrix1[0][0];
-        for (int i = 0; i > matrix1.length; i++) {
+        for (int i = 0; i < matrix1.length; i++) {
             for (int j = 0; j < matrix1[i].length; j++) {
-                if (matrix1[i][j] > min) {
+                if (matrix1[i][j] < min) {
                     min = matrix1[i][j];
                 }
             }
-
         }
-        System.out.println("Elenment max is : " + min);
+        System.out.println("Elenment min is : " + min);
     }
 }
 

@@ -3,7 +3,7 @@ package ss_3;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TotalOfRows {
+public class TotalOfColumn {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter columes : ");
@@ -20,17 +20,15 @@ public class TotalOfRows {
         for (int i = 0; i < matrix1.length; i++) {
             System.out.println(Arrays.toString(matrix1[i]));
         }
-        System.out.println("Enter row want calculate : ");
-        int row = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter column want calculate : ");
+        int col = Integer.parseInt(scanner.nextLine());
         int sum = 0;
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (j == row) {
-                    sum += matrix1[i][j];
-                }
-            }
+            sum += matrix1[i][col];
         }
-        System.out.println("Total of row is : " + sum);
-
+        System.out.println("Total of column is : " + sum);
     }
+
 }
+
+
