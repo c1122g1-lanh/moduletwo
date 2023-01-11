@@ -1,6 +1,6 @@
 package ss_7_abstractclassvsinterface.bai_1;
 
-public class Circle extends Shape implements Resizeable {
+public class Circle extends Shape implements IResizeable {
     private double radius = 1.0;
 
     public Circle() {

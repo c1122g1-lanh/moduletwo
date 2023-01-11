@@ -1,6 +1,6 @@
 package ss_7_abstractclassvsinterface.bai_1;
 
-public class Rectangle extends Shape implements Resizeable {
+public class Rectangle extends Shape implements IResizeable {
     private double width = 1.0;
     private double length = 1.0;
 

@@ -1,9 +1,7 @@
 package ss_7_abstractclassvsinterface.bai_2;
 
-import ss_7_abstractclassvsinterface.bai_1.Resizeable;
-import ss_7_abstractclassvsinterface.bai_1.Shape;
 
-public class Circle extends Shape1 implements Colorable {
+public class Circle extends Shape1 implements IColorable {
     private double radius = 1.0;
 
     public Circle() {

@@ -1,8 +1,5 @@
 package ss_7_abstractclassvsinterface.bai_2;
 
-import ss_7_abstractclassvsinterface.bai_1.Resizeable;
-import ss_7_abstractclassvsinterface.bai_1.Shape;
-
 public class Rectangle extends Shape1 {
     private double width = 1.0;
     private double length = 1.0;
