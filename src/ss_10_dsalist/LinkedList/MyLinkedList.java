@@ -1,4 +1,4 @@
-package ss_10_dsalist;
+package ss_10_dsalist.LinkedList;
 
 public class MyLinkedList<E> {
     private Node head;

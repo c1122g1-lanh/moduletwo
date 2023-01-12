@@ -1,6 +1,6 @@
-package ss_10_dsalist;
+package ss_10_dsalist.LinkedList;
 
-import java.util.LinkedList;
+import ss_10_dsalist.LinkedList.MyLinkedList;
 
 public class Test1 {
     public static void main(String[] args) {
