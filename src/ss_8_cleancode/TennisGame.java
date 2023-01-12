@@ -25,12 +25,12 @@ public class TennisGame {
 
             }
         } else if (scoreOfPlayer1 >= 4 || scoreOfPlayer2 >= 4) {
-            int resultScode = scoreOfPlayer1 - scoreOfPlayer2;
-            if (resultScode == 1) {
+            int resultScore = scoreOfPlayer1 - scoreOfPlayer2;
+            if (resultScore == 1) {
                 score = "Advantage player1";
-            } else if (resultScode < 0) {
+            } else if (resultScore < 0) {
                 score = "Advantage player2";
-            } else if (resultScode >= 2) {
+            } else if (resultScore >= 2) {
                 score = "Win for player1";
             } else {
                 score = "Win for player2";
