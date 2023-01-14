@@ -1,4 +1,4 @@
-package ss_11_stackvsqueue.bai_3;
+package ss_11_stackvsqueue.Queue;
 
 public class Solution {
     public static class Queue {
@@ -75,7 +75,6 @@ public class Solution {
             enQueue(q, 9);
             enQueue(q, 20);
             displayQueue(q);
-
         }
     }
 

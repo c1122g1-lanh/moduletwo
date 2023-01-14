@@ -1,4 +1,4 @@
-package ss_11_stackvsqueue.bai_3;
+package ss_11_stackvsqueue.Queue;
 
 public class Node {
     public int data;
