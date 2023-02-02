@@ -3,10 +3,10 @@ package ss_13_timkiem;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Seach {
+public class FindTheStringWithTheGreatestLength {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        LinkedList<Character> max = new LinkedList<>();
+        LinkedList<Character> maxList = new LinkedList<>();
         LinkedList<Character> list = new LinkedList<>();
 
         System.out.print("nhap chuoi : ");
@@ -19,12 +19,12 @@ public class Seach {
 
             list.add(string.charAt(i));
 
-            if (list.size() > max.size()) {
-                max.clear();
-                max.addAll(list);
+            if (list.size() > maxList.size()) {
+                maxList.clear();
+                maxList.addAll(list);
             }
         }
-        for (Character ch : max) {
+        for (Character ch : maxList) {
             System.out.print(ch);
         }
         System.out.println();

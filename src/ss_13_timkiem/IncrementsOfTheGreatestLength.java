@@ -10,7 +10,7 @@ public class IncrementsOfTheGreatestLength {
         System.out.print("Nhap chuoi : ");
         String string = scanner.nextLine();
 
-        LinkedList<Character> max = new LinkedList<>();
+        LinkedList<Character> maxList = new LinkedList<>();
 
         for (int i = 0; i < string.length(); i++) {
             LinkedList<Character> list = new LinkedList<>();
@@ -20,13 +20,13 @@ public class IncrementsOfTheGreatestLength {
                     list.add(string.charAt(j));
                 }
             }
-            if (list.size() > max.size()) {
-                max.clear();
-                max.addAll(list);
+            if (list.size() > maxList.size()) {
+                maxList.clear();
+                maxList.addAll(list);
             }
             list.clear();
         }
-        for (Character ch : max) {
+        for (Character ch : maxList) {
             System.out.print(ch);
         }
         System.out.println();

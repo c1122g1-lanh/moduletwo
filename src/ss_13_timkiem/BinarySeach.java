@@ -5,20 +5,18 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class BinarySeach {
-    public static int binarySeach(int[] arr, int value) {
-        int left = 0;
-        int right = arr.length - 1;
-        while (left <= right) {
-            int middle = (right + left) / 2;
-            if (value == arr[middle]) {
-                return value;
-            } else if (value > arr[middle]) {
-                left = middle + 1;
-            } else {
-                right = middle - 1;
-            }
+    public static int binarySeach(int[] arr, int left, int right, int value) {
+        if (left > right) {
+            return -1;
         }
-        return -1;
+        int middle = (right + left) / 2;
+        if (value == arr[middle]) {
+            return value;
+        } else if (value < arr[middle]) {
+            return binarySeach(arr, left, middle - 1, value);
+        } else {
+            return binarySeach(arr, middle + 1, right, value);
+        }
     }
 
     public static void main(String[] args) {
@@ -44,8 +42,6 @@ public class BinarySeach {
         System.out.println("nhap so can tim");
         int value = Integer.parseInt(sc.nextLine());
         System.out.println("mang duoc sap xep" + Arrays.toString(arr));
-        System.out.println("ket qua ");
-        System.out.println(BinarySeach.binarySeach(arr, value));
-
+        System.out.println("ket qua " + BinarySeach.binarySeach(arr, 0, number - 1, value));
     }
 }
