@@ -4,7 +4,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReadFile {
+public class ReadFileAndWriteFile {
+
     List<Country> countryList = new ArrayList<>();
 
     public List<Country> readFile() {

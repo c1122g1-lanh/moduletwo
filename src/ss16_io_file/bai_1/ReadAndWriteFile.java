@@ -4,15 +4,20 @@ import java.io.*;
 import java.util.List;
 
 public class ReadAndWriteFile {
-    public static void copyFile(String sourceFile, String targetFile) {
+    private static final String FILE_PATH = "D:\\module_2\\moduletwo\\src\\ss16_io_file\\bai_1\\source.csv";
+
+    private static final String FILE_PATH1 = "D:\\module_2\\moduletwo\\src\\ss16_io_file\\bai_1\\target.csv";
+
+
+    public static void copyFile() {
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
         try {
-            fileReader = new FileReader(sourceFile);
+            fileReader = new FileReader(FILE_PATH);
             bufferedReader = new BufferedReader(fileReader);
-            fileWriter = new FileWriter(targetFile);
+            fileWriter = new FileWriter(FILE_PATH1);
             bufferedWriter = new BufferedWriter(fileWriter);
 
             String line;
@@ -32,8 +37,6 @@ public class ReadAndWriteFile {
     }
 
     public static void main(String[] args) {
-        String sourceFile = "D:\\module_2\\moduletwo\\src\\ss16_io_file\\source.csv";
-        String targetFile = "D:\\module_2\\moduletwo\\src\\ss16_io_file\\target.csv";
-        copyFile(sourceFile, targetFile);
+        copyFile();
     }
 }

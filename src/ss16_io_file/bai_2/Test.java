@@ -15,7 +15,7 @@ public class Test {
         countryList.add(country1);
         countryList.add(country2);
         countryList.add(country3);
-        ReadFile readFile = new ReadFile();
-        readFile.writeFile(countryList);
+        ReadFileAndWriteFile readFileAndWriteFile = new ReadFileAndWriteFile();
+        readFileAndWriteFile.writeFile(countryList);
     }
 }
