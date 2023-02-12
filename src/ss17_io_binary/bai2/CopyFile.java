@@ -1,7 +1,5 @@
 package ss17_io_binary.bai2;
 
-import ss17_io_binary.bai1.ProductManagement;
-
 import java.io.*;
 import java.util.List;
 
